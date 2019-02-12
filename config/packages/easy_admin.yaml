@@ -1,0 +1,30 @@
+easy_admin:
+    design:
+        brand_color: '#1ABC9C'
+        menu:
+            - label: 'Restaurant'
+              icon: 'fa-hotdog'
+              children:
+                  - { entity: 'Restaurant'}
+            - label: 'User'
+              icon: 'fa-hotdog'
+              children:
+                - { entity: 'User'}
+    entities:
+#        Restaurant:
+#            class: App\Entity\Restaurant
+#            form:
+#                fields:
+#                    - { property: 'name'}
+#                    - { property: 'menu'}
+#                    - ...
+#        User:
+#            class: App\Entity\Restaurant
+#            form:
+#                fields:
+#                    - { property: 'name'}
+#                    - { property: 'email'}
+#                    - ...
+
+        - App\Entity\Restaurant
+        - App\Entity\User
